@@ -301,7 +301,7 @@ html[data-debug-view] .debug.hidden .debug {
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="1600,21" size="100,100">Hello!  
 
-You are about to begin the TCC Trinity River Library&#39;s tutorial on the arts.
+You are about to begin the TCC Trinity River Library&#39;s tutorial on finding and using literary criticism.
 
 This tutorial involves a scenario in which you help someone get started with their research.
 
@@ -400,20 +400,20 @@ Where do you tell $player_name to start first?
 
 &lt;img src=&quot;catalog.png&quot; alt=&quot;Screenshot of TCCD Library homepage, TCC Catalog search box with Article Databases menu box highlighted&quot;&gt;
 
-Since you&#39;re both interested in finding out what scholars have said about the arts and $path, you use those as your keywords.
+Since you&#39;re both interested in finding out what scholars have said about Frankenstein and $path, you use those as your keywords.
 &lt;&lt;set $search to &quot;catalog&quot;&gt;&gt;
 
 [[Let&#39;s look at the search results.|catalog Results]]
 </tw-passagedata><tw-passagedata pid="13" name="Now, we search the article database!" tags="" position="2000,1199" size="100,100">
-You direct $player_name to choose one of the databases listed under the Arts Subject heading, and they select JSTOR.
+You direct $player_name to choose one of the databases listed under the  Subject heading, and they select JSTOR.
 
 &lt;img src=&quot;jstor.png&quot; alt=&quot;Screenshot of TCCD Library homepage, TCC Article Databases menu &#39;By Subject - List of Databases&#39; with JSTOR option selected&quot;&gt;
 
 
-Since you&#39;re both interested in finding out what scholars have said about the arts and $path, you use those as your keywords.
+Since you&#39;re both interested in finding out what scholars have said about Frankenstein and $path, you use those as your keywords.
 &lt;&lt;set $search to &quot;database&quot;&gt;&gt;
 
-[[Let&#39;s check out the search results.|database Results]]</tw-passagedata><tw-passagedata pid="14" name="database Results" tags="" position="2213,1439" size="100,100">Here&#39;s a few of the articles that JSTOR listed in your search results. Do any of these sound relevant to your discussion of the arts and its relationship to $path?
+[[Let&#39;s check out the search results.|database Results]]</tw-passagedata><tw-passagedata pid="14" name="database Results" tags="" position="2213,1439" size="100,100">Here&#39;s a few of the articles that JSTOR listed in your search results. Do any of these sound relevant to your discussion of the Frankenstein and its relationship to $path?
 
 You can click the title of an article to read its abstract to find out more and select it for possible future use in $player_name&#39;s paper. Please select at least two articles before moving forward.
 
@@ -485,31 +485,31 @@ Once you have enough articles to start, you can look at themes found within thos
 </tw-passagedata><tw-passagedata pid="19" name="None of these articles look relevant. Now what?" tags="" position="2087,2211" size="100,100">Sometimes a title can be misleading.  Try looking at the article&#39;s abstract.  If it still doesn&#39;t look relevant, then try asking a different question.
 
 &lt;&lt;if $path == $topics[0]&gt;&gt;
-When looking at the the arts in relation to $topics[0]...
+When looking at the relationship of the monster to $topics[0], consider any moments where the monster meets or defies expectations.
 
-- what are the advantages of $topics[0]?
-- what are the goals of $topics[0]?
-- how does $topics[0] affect the audience&#39;s ability to enjoy the arts?
+- How does $topics[0] influence the story?
+- At what points do you see $topics[0] appear in the story?
+- Would the story be any different if any references to $topics[0] were removed?
 
 If you think any of the articles might answer some of these questions, consider keeping them.
 
 &lt;&lt;elseif $path == $topics[1]&gt;&gt;
-When looking at the the arts in relation to $topics[1]...
+When looking at the relationship of the monster to $topics[1], consider any moments where the monster meets or defies expectations.
 
-- what are the advantages of $topics[1]?
-- what are the goals of $topics[1]?
-- how does $topics[1] affect the audience&#39;s ability to enjoy the arts?
-
+- How does $topics[1] influence the story?
+- At what points do you see $topics[1] appear in the story?
+- Would the story be any different if any references to $topics[1] were removed?
+		
 If you think any of the articles might answer some of these questions, consider keeping them.
 
 
 &lt;&lt;else&gt;&gt;
-When looking at the the arts in relation to $topics[2]...
+When looking at the relationship of the monster to $topics[2], consider any moments where the monster meets or defies expectations.
 
-- what are the advantages of $topics[2]?
-- what are the goals of $topics[2]?
-- how does $topics[2] affect the audience&#39;s ability to enjoy the arts?
-
+- How does $topics[2] influence the story?
+- At what points do you see $topics[2] appear in the story?
+- Would the story be any different if any references to $topics[2] were removed?
+		
 If you think any of the articles might answer some of these questions, consider keeping them.
 
 &lt;&lt;/if&gt;&gt;
@@ -538,7 +538,7 @@ Which creates the following couple of sentences:
 - The relationship between Frankenstein&#39;s monster and $path influences $keywords[_i]...
 &lt;&lt;/for&gt;&gt;
 
-Some of the grammar may be off, but it&#39;s the start of a statement you&#39;re making about the arts. You can then finish the statement with why you think this is the case.
+Some of the grammar may be off, but it&#39;s the start of a statement you&#39;re making about the book. You can then finish the statement with why you think this is the case.
 
 Even better, you already selected $articles.length articles that you can cite for this paper.
 
